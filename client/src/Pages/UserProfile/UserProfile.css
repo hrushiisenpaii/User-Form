@@ -1,0 +1,15 @@
+.user-profile-container{
+    margin: 20px 0px 30px 0px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+
+.user-profile-sec{
+    display: flex;
+    gap: 5px;
+}
+
+.user-profile-item{
+    font-weight: 600;
+}
