@@ -11,7 +11,8 @@ const Confirm = () => {
         <div>
             <p>Thanks! {User.result.name} for Submitting the form.</p>
             <p>An E-mail will be sent to you after successfull completion.</p>
-            <p className='terms'>(check spam folder if not received)</p>
+            <p className='terms'>(check spam folder if not received, this might take a few mins)</p>
+            <p className='terms'>You can also click back to view form, the mail will come later...</p>
             <p>Click on Continue and start verify process.</p>
             <br />
             <p className='terms'>You can also login later to view your details.</p>
