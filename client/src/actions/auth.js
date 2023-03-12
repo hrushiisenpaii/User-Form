@@ -6,8 +6,8 @@ export const signup = (authData, navigate) => async (dispatch) => {
     try {
         const { data } = await api.signUp(authData)
         dispatch({ type: 'AUTH', data})
-        dispatch(setCurrentUser(JSON.parse(localStorage.getItem('Profile'))))
-        navigate('/')
+        dispatch(setCurrentUser(JSON.parse(localStorage.getItem('Profile'))));
+        navigate('/confirm')
     } catch (error) {
         console.log(error)
     }
