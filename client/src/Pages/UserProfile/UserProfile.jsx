@@ -17,6 +17,10 @@ const UserProfile = ({user}) => {
         <p>{moment(user.result.DOB).toLocaleString().substring(0, 15)}</p>
       </div>
       <div className="user-profile-sec">
+        <p className='user-profile-item'>Age (in yrs) :</p>
+        <p>{moment(user.result.DOB).fromNow().substring(0, 8)}</p>
+      </div>
+      <div className="user-profile-sec">
         <p className='user-profile-item'>Email-id :</p>
         <p>{user.result.email}</p>
       </div>
@@ -24,7 +28,7 @@ const UserProfile = ({user}) => {
         <p className='user-profile-item'>Phone number :</p>
         <p>{user.result.phones}</p>
       </div>
-      <div className="user-profile-sec">
+      <div className="user-profile-sec-1">
         <p className='user-profile-item'>Joined :</p>
         <p>{moment(user.result.joinedOn).fromNow()}</p>
       </div>

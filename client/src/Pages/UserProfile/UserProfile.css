@@ -2,14 +2,28 @@
     margin: 20px 0px 30px 0px;
     background-color: rgba(0, 0, 0, 0.1);
     padding: 20px 30px;
+    min-width: 400px;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .user-profile-sec{
     display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.user-profile-sec-1{
+    display: flex;
+    font-size: 15px;
+    align-items: center;
     gap: 5px;
 }
 
 .user-profile-item{
     font-weight: 600;
+    margin: 10px 0px 10px 0px;
 }
