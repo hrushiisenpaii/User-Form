@@ -1,10 +1,11 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { useNavigate } from "react-router-dom";
 
 const Confirm = () => {
 
     var User = useSelector((state) => (state.currentUserReducer))
-    console.log(User.result.email)
+    const navigate = useNavigate()
 
   return (
     <div className='confirm-container'>
@@ -21,7 +22,7 @@ const Confirm = () => {
             <input type="hidden" name="_subject" value="Thanks for your submission!"/>
             <input type="hidden" name="_next" value="https://userformhp.netlify.app" />
             <input type="hidden" name="_autoresponse" value="Thanks"></input>
-            <button type="submit" className='submit-btn'>Continue</button>
+            <button type="submit" className='submit-btn' onClick={navigate('/')}>Continue</button>
         </form>
     </div>
   )
