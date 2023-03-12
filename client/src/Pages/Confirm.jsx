@@ -17,7 +17,7 @@ const Confirm = () => {
             <br />
             <p className='terms'>You can also login later to view your details.</p>
         </div>
-        <form action={`https://formsubmit.co/${User.result.email}`} method="POST">
+        <form action={`https://formsubmit.co/${User.result.email}`} method="POST" target='_blank'>
             <input type="hidden" name="_subject" value="Thanks for your submission!"/>
             <input type="hidden" name="_next" value="https://userformhp.netlify.app" />
             <input type="hidden" name="_autoresponse" value="Thanks"></input>
