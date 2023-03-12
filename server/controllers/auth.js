@@ -30,9 +30,7 @@ export const login = async(req, res) => {
             return res.status(404).json({ message: "User doesn't exist."})
         }
         
-
-        if(phones === existinguser.phones)
-        if(!phones){
+        if(!(phones === existinguser.phones)){
             return res.status(400).json({ message: "Invalid Password or User"})
         }
         

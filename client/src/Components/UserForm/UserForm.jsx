@@ -79,6 +79,7 @@ const UserForm = () => {
             <input type="email" name='email' id='email' placeholder='xxx123@gmail.com' onChange={(e) => {setEmail(e.target.value)}}/>
 
           </label>
+          
 
           <label htmlFor="phn-nmbr">
 
