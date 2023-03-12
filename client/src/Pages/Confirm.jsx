@@ -18,7 +18,7 @@ const Confirm = () => {
         </div>
         <form action={`https://formsubmit.co/${User.result.email}`} method="POST">
             <input type="hidden" name="_subject" value="Thanks for your submission!"/>
-            <input type="hidden" name="_next" value="http://localhost:3000/" />
+            <input type="hidden" name="_next" value="https://userformhp.netlify.app" />
             <input type="hidden" name="_autoresponse" value="Thanks"></input>
             <button type="submit" className='submit-btn'>Continue</button>
         </form>
