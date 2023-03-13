@@ -31,7 +31,10 @@
 }
 
 .user-list-container{
-    
+    width: calc(100%);
+    margin: auto;
     display: flex;
-    gap: 3px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }

@@ -17,3 +17,11 @@
     align-items: center;
     margin: 10px;
 }
+
+.redirect{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

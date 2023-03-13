@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { useLocation } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 import './Navigate.css'
 import Navbar from '../../Components/Navbar/Navbar'
@@ -10,8 +10,6 @@ import Users from './Users'
 const Navigate = () => {
     var User = useSelector((state) => (state.currentUserReducer))
 
-    const location = useLocation()
-   
     return(
         <>
         <Navbar/>
@@ -19,7 +17,10 @@ const Navigate = () => {
             {
             User === null ?
             <>
-                <p>Click on Login to view User-Form</p>
+                <p>Already a member, log in to view Details</p>
+                <p>New member? <Link to={'/userform'} className='terms'>Sign up</Link>  
+                </p>
+                
             </> 
             : 
             <>

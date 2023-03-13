@@ -108,7 +108,7 @@ const UserForm = () => {
       <p>
         {IsSignup ? 'Already a member?' : "Not a member?"}
         
-        <button type='button' className='handle-Switch-btn' onClick={handleSwitch}>{ IsSignup ? "View" : "Join" }</button>
+        <button type='button' className='handle-Switch-btn' onClick={handleSwitch}>{ IsSignup ? "Log in" : "Join" }</button>
       </p>
 
       </div>
