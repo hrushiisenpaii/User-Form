@@ -17,7 +17,7 @@ User can see his/her Details on main page. <br>
 All the current users are shown below. <br>
 ![Home Page](https://user-images.githubusercontent.com/76391397/224681959-4a76204e-f986-40cc-be5d-2cfb81ba9dbf.png) <br>
 
-##LogIn
+## LogIn
 User can login using his/her email and Phn no. <br>
 Here Phn no. is acting as the user password.<br>
 ![LoginPage](https://user-images.githubusercontent.com/76391397/224682040-f26a421c-bb12-459b-abbf-e3fa80cb135f.png)
