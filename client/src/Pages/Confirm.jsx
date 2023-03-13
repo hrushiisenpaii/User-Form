@@ -1,14 +1,23 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { useNavigate, Link } from "react-router-dom";
 
 const Confirm = () => {
 
-   useEffect(() => {
+  const [count, setCount] = useState(20)
+
+  useEffect(() => {
     setTimeout(() => {
       navigate('/');
     }, 20000)
-   }, []);
+   }, []);   
+
+   useEffect (() => {
+    const interval = setInterval(() => {
+      setCount((prevCount) => prevCount -1)
+    }, 1000)
+    return () => clearInterval(interval)
+   })
 
     var User = useSelector((state) => (state.currentUserReducer))
     const navigate = useNavigate()
@@ -35,7 +44,7 @@ const Confirm = () => {
     </div>
 
     <div className='redirect'>
-    <p className='terms'>Redirecting in 20 sec...</p>
+    <p className='terms'>Redirecting in {count} sec...</p>
     <Link to={'/'}>
       <p className='terms'> OR go to profile</p>
     </Link>
